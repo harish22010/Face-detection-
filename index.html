@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Face Detection</title>
+  <script src="face-api.min.js">face-api.min.js</script>
+  <script src="main.js">main.js</script>
+  <style type="text/css" media="all">
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #myImg {
+      width: 50vh;
+      height: 70vh;
+    }
+    .container {
+      margin-top: 5%;
+      position: relative;
+    }
+    canvas {
+      left: 0;
+      top: 0;
+      position: absolute;
+    }
+    
+   
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="" alt="loading image ...." id="myImg">
+  </div>
+  <input type="file" id="myFile" onchange="uploadImage" accept=".jpg,.jpeg,.png">
+  <button id="btn" onclick="alert('@Author of this project : Harish');">About</button>
+</body>
+</html>
